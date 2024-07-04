@@ -294,7 +294,7 @@ def main():
     device_ids = GPU_devices([0, 1])
     model = Network(3, 5)
     
-    path_ocr = Path('2023-02-02-exp-016-br-paper-valfride-cg-ocr-goncalves2018realtime-original-120-60-adam-batch64-pat7')
+    path_ocr = Path('./saved_models/PKU-SR')
     criterion = nn.L1Loss()
     
     if args.mode == 0:

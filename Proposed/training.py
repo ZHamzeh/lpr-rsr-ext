@@ -336,8 +336,8 @@ def fit_gan(generator, train_dataloader, optimizer_G, feature_extractor, L1_loss
 def main(): 
     args = args_m01()
     train_dataloader, val_dataloader = __dataset__.load_dataset(args.samples, args.batch, args.mode, pin_memory=True, num_workers=0)
-    path_ocr = Path('./saved_models/2023-02-02-exp-016-br-paper-valfride-cg-ocr-goncalves2018realtime-original-120-60-adam-batch64-pat7')
-    
+    path_ocr = Path('./saved_models/PKU-SR')
+
     generator = Network(3, 3)
     feature_extractor = OCRFeatureExtractor(path_ocr)
     feature_extractor.cuda()

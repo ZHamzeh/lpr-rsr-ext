@@ -27,7 +27,7 @@ from keras.preprocessing.image import img_to_array
 from skimage.metrics import structural_similarity
 from torchvision import datasets, models, transforms
 from math import floor, log10
-from NetSr_v1 import MobileNetV2
+#from NetSr_v1 import MobileNetV2
 # from network import FeatureExtractor
 
 
